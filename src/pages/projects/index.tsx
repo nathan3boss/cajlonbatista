@@ -8,7 +8,7 @@ import { ProjectsContainer } from './styles';
 const projects = [
   {
     title: 'Tau UI',
-    link: '',
+    link: 'https://tauix.vercel.app/',
     description:
       'Web Components Library. Compatible with Vue, React, and Angular',
   },
