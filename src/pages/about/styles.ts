@@ -4,7 +4,7 @@ import styled from 'styled-components';
 // Components
 import { TauPage } from 'tauix/react';
 
-export const IndexContainer = styled(TauPage)`
+export const AboutContainer = styled(TauPage)`
   padding: 17px 55px;
   padding-top: 85px;
 
@@ -25,31 +25,5 @@ export const IndexContainer = styled(TauPage)`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    h1 {
-      font-size: 2em;
-      text-align: center;
-      color: var(--tau-primary);
-
-      margin: 0px;
-      margin-bottom: 25px;
-    }
-
-    p {
-      font-family: 'Syne Mono', sans-serif;
-      color: var(--tau-text);
-      font-size: 1em;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-
-    tau-icon {
-      width: fit-content;
-      height: fit-content;
-    }
-
-    tau-button {
-      cursor: pointer;
-    }
   }
 `;

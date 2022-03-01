@@ -28,8 +28,6 @@ export const ProjectsContainer = styled(TauPage)`
     flex-wrap: wrap;
     gap: 20px;
 
-    border-radius: 10px;
-
     section {
       width: 300px;
       height: fit-content;

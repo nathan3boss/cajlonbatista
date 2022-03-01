@@ -6,6 +6,7 @@ import { Navigate } from 'react-router-dom';
 import Index from '../pages/index';
 import Header from '../components/header';
 import Projects from '../pages/projects';
+import About from '../pages/about';
 
 const Router = () => (
   <BrowserRouter>
@@ -16,6 +17,7 @@ const Router = () => (
 
       <Route path="/home" element={<Index />} />
       <Route path="/projects" element={<Projects />} />
+      <Route path="/about" element={<About />} />
 
       <Route path="*" element={<Navigate to="/home" />} />
     </Routes>
