@@ -22,9 +22,11 @@ export const ProjectsContainer = styled(TauPage)`
 
   main {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    flex-wrap: wrap;
+    gap: 20px;
 
     border-radius: 10px;
 

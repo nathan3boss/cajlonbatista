@@ -1,8 +1,4 @@
-// Dependencies
-
 // Styles
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { ProjectsContainer } from './styles';
 
 const projects = [
@@ -11,6 +7,12 @@ const projects = [
     link: 'https://tauix.vercel.app/',
     description:
       'Web Components Library. Compatible with Vue, React, and Angular',
+  },
+  {
+    title: 'Wuun',
+    link: 'https://github.com/spikeboss/wuun/',
+    description:
+      'A simple node console and file logger',
   },
 ];
 
