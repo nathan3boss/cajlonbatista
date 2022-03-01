@@ -21,12 +21,6 @@ export const IndexContainer = styled(TauPage)`
   }
 
   main {
-    width: 100%;
-    max-width: 500px;
-    margin: auto;
-    height: 100%;
-    max-height: 300px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,7 +46,8 @@ export const IndexContainer = styled(TauPage)`
     }
 
     tau-icon {
-      width: 300px;
+      width: fit-content;
+      height: fit-content;
     }
 
     tau-button {

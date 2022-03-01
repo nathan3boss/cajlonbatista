@@ -6,7 +6,7 @@ export const Themes = createGlobalStyle`
     --tau-primary: #F26440;
     --tau-hover: #F26440;
     --tau-focus: #F26440;
-    --tau-text: #3b3d4c47;
+    --tau-text: #3b3d4c90;
     --tau-border: #3b3d4c47;
     --tau-placeholder: #888CB0;
     --tau-card: rgba(255, 255, 255, 0.02);
