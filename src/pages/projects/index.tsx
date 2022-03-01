@@ -14,18 +14,18 @@ const projects = [
   },
 ];
 
-const Projects = () => {  
+const Projects = () => {
   return (
     <ProjectsContainer>
       <main>
         {projects.map((prj) => (
-          <Link to={prj.link} hrefLang="_blank">
+          <a href={prj.link} target="_blank">
             <section>
               <h1>{prj.title}</h1>
 
               <span>{prj.description}</span>
             </section>
-          </Link>
+          </a>
         ))}
       </main>
     </ProjectsContainer>
