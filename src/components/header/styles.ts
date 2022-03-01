@@ -36,12 +36,6 @@ export const HeaderContainer = styled(TauFlex)`
   }
 
   tau-flex {
-    align-items: stretch;
-
-    tau-ripple {
-      --tau-ripple: var(--tau-primary);
-    }
-
     span {
       display: flex;
       align-items: center;
@@ -67,6 +61,34 @@ export const HeaderContainer = styled(TauFlex)`
         }
       }
     }
+  }
+
+  :not(tau-drawer) > tau-flex{
+    align-items: stretch;
+
+    tau-ripple {
+      --tau-ripple: var(--tau-primary);
+    }
+
+    tau-icon {
+      width: 40px;
+      height: 40px;
+
+      display: none;
+      place-items: center;
+    }
+
+    @media (max-width: 500px) {
+      justify-content: flex-end;
+      
+      span {
+        display: none;
+      }
+
+      tau-icon {
+        display: grid;
+      }
+    }
 
     div:first-child {
       display: grid;
@@ -87,6 +109,21 @@ export const HeaderContainer = styled(TauFlex)`
 
       &:hover {
         border-color: var(--tau-primary);
+      }
+    }
+  }
+
+  tau-drawer {
+    tau-flex {
+      width: 260px;
+      padding: 20px;
+
+      flex-direction: column;
+      align-items: center;
+
+      span {
+        margin: 0px !important;
+        margin-top: 30px !important;
       }
     }
   }

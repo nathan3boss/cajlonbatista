@@ -8,6 +8,7 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
 
     font-family: var(--tau-font-family);
+    text-decoration: none;
   }
 
   tau-theme {

@@ -1,5 +1,4 @@
 // Dependencies
-import { useEffect, useRef } from 'react';
 import { TauIcon } from 'tauix/react';
 
 // Styles

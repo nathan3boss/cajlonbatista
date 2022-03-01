@@ -1,5 +1,7 @@
 // Dependencies
-import { TauButton, TauFlex, TauIcon, TauRipple } from 'tauix/react';
+import { useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { TauDrawer, TauFlex, TauIcon, TauRipple } from 'tauix/react';
 
 // Components
 import { useDispatch, useSelector } from 'react-redux';
@@ -10,8 +12,6 @@ import { HeaderContainer } from './styles';
 // Utils
 import { setTheme } from '../../store/actions/actions';
 import { APP } from '../../store/store';
-import { useLocation, useNavigate } from 'react-router-dom';
-import { useEffect } from 'react';
 
 const links = [
   {
@@ -36,6 +36,7 @@ const Header = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const location = useLocation();
+  const [drawer, setDrawer] = useState(true);
 
   const { theme } = useSelector((state: APP) => state);
 
@@ -53,9 +54,13 @@ const Header = () => {
     </TauRipple>
   );
 
+  const onCloseDrawer = () => setDrawer(false);
+
   return (
     <HeaderContainer>
       <TauFlex>
+        <span className="route">{location.pathname}</span>
+
         {links.map(({ title, path }) => (
           <span
             key={path}
@@ -65,7 +70,27 @@ const Header = () => {
             {title}
           </span>
         ))}
+
+        <TauIcon onClick={() => setDrawer(true)} name="menu" />
       </TauFlex>
+
+      <TauDrawer onTauClose={() => onCloseDrawer()} open={drawer}>
+        <TauFlex>
+          {links.map(({ title, path }) => (
+            <span
+              key={path}
+              onClick={() => {
+                navigate(path);
+
+                onCloseDrawer();
+              }}
+              className={location.pathname.includes(path) ? 'active' : ''}
+            >
+              {title}
+            </span>
+          ))}
+        </TauFlex>
+      </TauDrawer>
     </HeaderContainer>
   );
 };
