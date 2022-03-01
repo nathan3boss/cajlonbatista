@@ -36,7 +36,7 @@ const Header = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const location = useLocation();
-  const [drawer, setDrawer] = useState(true);
+  const [drawer, setDrawer] = useState(false);
 
   const { theme } = useSelector((state: APP) => state);
 
@@ -59,7 +59,7 @@ const Header = () => {
   return (
     <HeaderContainer>
       <TauFlex>
-        <span className="route">{location.pathname}</span>
+        <span className="route">{location.pathname.split('/')[1]}</span>
 
         {links.map(({ title, path }) => (
           <span

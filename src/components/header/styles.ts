@@ -71,18 +71,33 @@ export const HeaderContainer = styled(TauFlex)`
     }
 
     tau-icon {
-      width: 40px;
-      height: 40px;
+      width: 30px;
+      height: 30px;
 
       display: none;
       place-items: center;
+
+      color: var(--tau-text);
+    }
+
+    .route {
+      display: none;
+      align-items: center;
+      justify-content: center;
     }
 
     @media (max-width: 500px) {
-      justify-content: flex-end;
+      width: 100%;
+
+      justify-content: space-around;
+      align-items: center;
       
       span {
         display: none;
+
+        &.route {
+          display: flex;
+        }
       }
 
       tau-icon {
