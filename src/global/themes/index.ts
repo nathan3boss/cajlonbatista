@@ -3,9 +3,9 @@ import { createGlobalStyle } from 'styled-components';
 
 export const Themes = createGlobalStyle`
   .tau-light {
-    --tau-primary: #F26440;
-    --tau-hover: #F26440;
-    --tau-focus: #F26440;
+    --tau-primary: #18db96;
+    --tau-hover: #18db96;
+    --tau-focus: #18db96;
     --tau-text: #3b3d4c90;
     --tau-border: #3b3d4c47;
     --tau-placeholder: #888CB0;

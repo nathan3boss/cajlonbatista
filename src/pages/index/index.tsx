@@ -8,7 +8,7 @@ const Index = () => {
   return (
     <IndexContainer>
       <main>
-        <TauIcon url="/assets/20439.gif" />
+        <TauIcon url="/assets/umaru.png" />
 
         <h1>Francisco Cajlon</h1>
 

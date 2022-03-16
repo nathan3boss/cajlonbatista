@@ -7,6 +7,7 @@ import Index from '../pages/index';
 import Header from '../components/header';
 import Projects from '../pages/projects';
 import About from '../pages/about';
+import Contact from '../pages/contact';
 
 const Router = () => (
   <BrowserRouter>
@@ -17,6 +18,7 @@ const Router = () => (
 
       <Route path="/home" element={<Index />} />
       <Route path="/projects" element={<Projects />} />
+      <Route path="/contact" element={<Contact />} />
       <Route path="/about" element={<About />} />
 
       <Route path="*" element={<Navigate to="/home" />} />

@@ -6,13 +6,7 @@ const projects = [
     title: 'Tau UI',
     link: 'https://tauix.vercel.app/',
     description:
-      'Web Components Library. Compatible with Vue, React, and Angular',
-  },
-  {
-    title: 'Wuun',
-    link: 'https://github.com/spikeboss/wuun/',
-    description:
-      'A simple node console and file logger',
+      'Web Components Library',
   },
 ];
 

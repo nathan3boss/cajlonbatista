@@ -44,8 +44,22 @@ export const IndexContainer = styled(TauPage)`
     }
 
     tau-icon {
+      display: block;
+      
       width: fit-content;
       height: fit-content;
+
+      margin-bottom: 20px;
+
+      img {
+        max-width: 300px;
+        border-radius: 100%;
+
+        display: block;
+
+        overflow: hidden;
+        object-fit: cover;
+      }
     }
 
     tau-button {
